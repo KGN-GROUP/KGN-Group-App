@@ -1,0 +1,29 @@
+name: kgn_group
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  http: ^1.2.2
+  file_picker: ^8.1.2
+  url_launcher: ^6.3.1
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/kgn_logo.png
+
+# Generate Android and iOS launcher icons from the supplied company logo.
+flutter_launcher_icons:
+  image_path: "assets/kgn_logo.png"
+  android: true
+  ios: true
+  remove_alpha_ios: true
+  adaptive_icon_background: "#080402"
+  adaptive_icon_foreground: "assets/kgn_logo.png"
